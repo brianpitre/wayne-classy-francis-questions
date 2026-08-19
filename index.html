@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pastors Wayne &amp; Classy Francis &middot; Questions</title>
+<style>
+:root{
+  --paper:#F7F1E5; --card:#EFE6D5; --ink:#2B1A10; --soft:#6B5644;
+  --rule:rgba(43,26,16,.15); --gold:#8A5E0F; --olive:#5D6A2B;
+  --display:"Hoefler Text",Didot,"Playfair Display",Georgia,serif;
+  --sans:"Avenir Next",Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --mono:"Andale Mono",Menlo,"Courier New",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+ font-size:18px;line-height:1.5;padding-bottom:60px}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+header{padding:40px 0 26px;border-bottom:2px solid var(--ink)}
+.kick{font-family:var(--mono);text-transform:uppercase;letter-spacing:.28em;
+ font-size:.6rem;color:var(--gold);margin:0 0 12px}
+h1{font-family:var(--display);font-weight:900;font-size:clamp(1.9rem,5vw,3rem);
+ line-height:1;letter-spacing:-.02em;margin:0}
+.where{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;color:var(--soft);
+ margin:12px 0 0}
+.legend{font-family:var(--mono);text-transform:uppercase;letter-spacing:.16em;
+ font-size:.58rem;color:var(--soft);margin:16px 0 0}
+.legend b{color:var(--gold)}
+.blk{padding:38px 0 8px;border-bottom:1px solid var(--rule)}
+.blk:last-of-type{border-bottom:0}
+.blk-head{display:flex;gap:18px;align-items:baseline;margin:0 0 20px}
+.blk-no{font-family:var(--display);font-weight:900;font-size:clamp(2.4rem,6vw,3.4rem);
+ line-height:.8;color:var(--gold);flex:0 0 auto}
+.blk-head h2{font-family:var(--display);font-weight:900;font-size:clamp(1.3rem,3.4vw,1.85rem);
+ line-height:1.1;margin:0}
+.blk-sub{font-family:var(--sans);font-size:.86rem;color:var(--soft);margin:7px 0 0}
+.qs{list-style:none;margin:0;padding:0;counter-reset:q}
+.qs li{counter-increment:q;margin:0 0 4px}
+.qs button.q{display:flex;gap:14px;align-items:flex-start;width:100%;text-align:left;
+ font:inherit;color:inherit;background:transparent;border:1px solid transparent;
+ border-radius:4px;padding:13px 14px;cursor:pointer}
+.qs button.q:hover{background:var(--card);border-color:var(--rule)}
+.qs button.q::before{content:counter(q);font-family:var(--mono);font-size:.66rem;
+ color:var(--soft);flex:0 0 1.6em;padding-top:.42em;letter-spacing:.04em}
+.qt{font-size:1.06rem;line-height:1.45}
+.qs li.key .qt{font-weight:600}
+.qs li.key button.q{border-left:4px solid var(--gold);border-radius:0 4px 4px 0;
+ background:rgba(138,94,15,.055)}
+.qs li.key button.q:hover{background:rgba(138,94,15,.1)}
+.aside{display:block;font-family:var(--sans);font-style:italic;font-size:.82rem;
+ line-height:1.5;color:var(--soft);margin-top:6px}
+.qs li.done button.q{opacity:.38}
+.qs li.done .qt{text-decoration:line-through}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--ink);color:var(--paper);
+ font-family:var(--mono);text-transform:uppercase;letter-spacing:.16em;font-size:.58rem}
+.bar .wrap{display:flex;align-items:center;gap:14px;padding:11px 24px}
+.bar b{font-family:var(--display);font-size:1rem;letter-spacing:0;margin-right:5px}
+.bar .rem b{color:#EFB02B}
+.bar button{margin-left:auto;font:inherit;text-transform:uppercase;letter-spacing:.14em;
+ padding:6px 12px;background:transparent;color:var(--paper);cursor:pointer;
+ border:1px solid rgba(247,241,229,.4);border-radius:2px}
+.bar button:hover{background:rgba(247,241,229,.14)}
+@media (max-width:640px){
+ body{font-size:17px} .wrap{padding:0 18px}
+ .blk-head{gap:12px} .qt{font-size:1rem}
+}
+@media (prefers-color-scheme:dark){
+ :root{--paper:#241509;--card:#2E1C0F;--ink:#EFE4D2;--soft:#B49E84;
+  --rule:rgba(239,228,210,.16);--gold:#EFB02B}
+ header{border-bottom-color:var(--gold)}
+ .qs li.key button.q{background:rgba(239,176,43,.09)}
+ .qs li.key button.q:hover{background:rgba(239,176,43,.15)}
+ /* The bar is dark in BOTH schemes, so its text cannot ride on --paper — that token
+    flips to #241509 in dark mode and the Reset button vanishes into the bar. */
+ .bar{background:#140E07;color:#EFE4D2;border-top:1px solid rgba(239,228,210,.2)}
+ .bar button{color:#EFE4D2;border-color:rgba(239,228,210,.42)}
+ .bar button:hover{background:rgba(239,228,210,.15)}
+}
+@media print{
+ body{background:#fff;color:#000;font-size:10.5pt;padding-bottom:0}
+ header{padding:0 0 14px;border-bottom:1.5pt solid #000}
+ .kick,.where,.legend{color:#000}
+ .bar{display:none}
+ .blk{padding:16px 0 4px;page-break-inside:avoid}
+ .blk-no,.blk-head h2{color:#000}
+ .qs button.q{padding:5px 0;border:0;cursor:default}
+ .qs li.key button.q{border-left:2.5pt solid #000;padding-left:8px;background:none}
+ .qs li.done button.q{opacity:1} .qs li.done .qt{text-decoration:none}
+ .aside{color:#333}
+}
+</style></head><body>
+
+<header><div class="wrap">
+<p class="kick">Interview questions</p>
+<h1>Pastors Wayne &amp; Classy Francis</h1>
+<p class="where">The Life Church New York · Mamaroneck · 20 August 2026 · 30th Anniversary documentary</p>
+<p class="legend">45 questions &middot; <b>24 marked &mdash; do not miss these</b> &middot; tap to mark asked</p>
+</div></header>
+
+<div class="wrap">
+<section class="blk">
+<div class="blk-head"><span class="blk-no">1</span><div><h2>Authentic Church — the ten years before (12 min)</h2></div></div>
+<ol class="qs">
+<li class="key" data-q="q1"><button type="button" class="q"><span class="qt"><b>Classy — take me back to Authentic Church. What was it?</b></span></button></li>
+<li data-q="q2"><button type="button" class="q"><span class="qt">Wayne — how did it start? What were you trying to build in White Plains?</span></button></li>
+<li class="key" data-q="q3"><button type="button" class="q"><span class="qt"><b>What was a Sunday like? You were portable, in a theater — walk me through the morning.</b></span><span class="aside"><i>(Load-in, load-out, every week, for years. That&rsquo;s a scene, and it&rsquo;s the &ldquo;before&rdquo; the film needs.)</i></span></button></li>
+<li data-q="q4"><button type="button" class="q"><span class="qt">How many people were you?</span></button></li>
+<li data-q="q5"><button type="button" class="q"><span class="qt">What was hard about pastoring in Westchester that somebody in Memphis wouldn&rsquo;t guess?</span></button></li>
+<li class="key" data-q="q6"><button type="button" class="q"><span class="qt"><b>After ten years, what were you praying for?</b></span></button></li>
+</ol></section>
+<section class="blk">
+<div class="blk-head"><span class="blk-no">2</span><div><h2>The friendship — 2018 (10 min)</h2></div></div>
+<ol class="qs">
+<li class="key" data-q="q7"><button type="button" class="q"><span class="qt"><b>Take me to the first time you met Pastor John. Where were you?</b></span></button></li>
+<li data-q="q8"><button type="button" class="q"><span class="qt">What did you notice about him?</span></button></li>
+<li class="key" data-q="q9"><button type="button" class="q"><span class="qt"><b>How does a friendship like that even happen between two pastors 1,100 miles apart?</b></span></button></li>
+<li data-q="q10"><button type="button" class="q"><span class="qt">Classy — what did <i>you</i> make of it, watching it start?</span></button></li>
+<li data-q="q11"><button type="button" class="q"><span class="qt">When did it stop being a professional relationship?</span></button></li>
+<li class="key" data-q="q12"><button type="button" class="q"><span class="qt"><b>Five years of a weekly podcast. What keeps two people talking every week for five years?</b></span></button></li>
+</ol></section>
+<section class="blk">
+<div class="blk-head"><span class="blk-no">3</span><div><h2>God and Race (10 min)</h2></div></div>
+<ol class="qs">
+<li class="key" data-q="q13"><button type="button" class="q"><span class="qt"><b>Take me to how the series started. Whose idea, and what was the conversation?</b></span></button></li>
+<li data-q="q14"><button type="button" class="q"><span class="qt">What was 2019 like for you, as a pastor, in that season?</span></button></li>
+<li class="key" data-q="q15"><button type="button" class="q"><span class="qt">You filmed it in both cities. <b>What was it like preaching that in Memphis? What was it like for Pastor John preaching it in New York?</b></span></button></li>
+<li class="key" data-q="q16"><button type="button" class="q"><span class="qt">Then the country changed a few months later. <b>You&rsquo;d already made it. What was that like?</b></span></button></li>
+<li class="key" data-q="q17"><button type="button" class="q"><span class="qt"><b>The book came after. What did you want on the page that a sermon couldn&rsquo;t hold?</b></span></button></li>
+<li data-q="q18"><button type="button" class="q"><span class="qt">Classy — what did you see in your husband through that stretch?</span></button></li>
+</ol></section>
+<section class="blk">
+<div class="blk-head"><span class="blk-no">4</span><div><h2>Easter Sunday 2020 — the merge (15 min)</h2></div></div>
+<ol class="qs">
+<li class="key" data-q="q19"><button type="button" class="q"><span class="qt"><b>Take me to the day you decided. Where were you, and who else was in the room?</b></span></button></li>
+<li data-q="q20"><button type="button" class="q"><span class="qt">Whose idea was it first, and how did that unfold?</span></button></li>
+<li class="key" data-q="q21"><button type="button" class="q"><span class="qt"><b>You were the first church ever to merge with The Life Church. Nobody had done it. What was it like going first, with no template?</b></span></button></li>
+<li class="key" data-q="q22"><button type="button" class="q"><span class="qt"><b>Then Westchester became the first place in America to lock down. Take me into those weeks.</b></span><span class="aside"><i>don&rsquo;t hand him the history. He lived it; let him tell it.</i></span></button></li>
+<li data-q="q23"><button type="button" class="q"><span class="qt">What happened to the theater?</span></button></li>
+<li class="key" data-q="q24"><button type="button" class="q"><span class="qt"><b>How do you tell a church something that big when you physically can&rsquo;t gather them?</b></span></button></li>
+<li data-q="q25"><button type="button" class="q"><span class="qt">What did your congregation say back?</span></button></li>
+<li class="key" data-q="q26"><button type="button" class="q"><span class="qt"><b>Easter Sunday 2020. Walk me through that day, hour by hour. What did it actually look like?</b></span><span class="aside">the single most important answer of the day. Ask it, then stop talking.</span></button></li>
+<li data-q="q27"><button type="button" class="q"><span class="qt">What did you think was going to happen next? How wrong were you?</span></button></li>
+<li data-q="q28"><button type="button" class="q"><span class="qt">Looking back — what did the timing turn out to be?</span><span class="aside"><i>(One pass. Let them frame it.)</i></span></button></li>
+</ol></section>
+<section class="blk">
+<div class="blk-head"><span class="blk-no">5</span><div><h2>Classy&rsquo;s block (10 min)</h2></div></div>
+<ol class="qs">
+<li class="key" data-q="q29"><button type="button" class="q"><span class="qt"><b>Classy, you were a senior pastor of your own church for ten years. What was that like to hand over?</b></span><span class="aside"><i>(Perspective, not loss — she chose this too.)</i></span></button></li>
+<li class="key" data-q="q30"><button type="button" class="q"><span class="qt">The friendship that led to it was Wayne&rsquo;s first. <b>What was it like watching it from where you stood?</b></span></button></li>
+<li class="key" data-q="q31"><button type="button" class="q"><span class="qt"><b>Tell me about Leslie.</b></span><span class="aside">her must-get, and the reason this block exists. Every public asset in this story is John-and-Wayne. Leslie and Classy is the relationship nobody has recorded, and Leslie carries Section III&rsquo;s voiceover, the Zoe beat, and the film&rsquo;s closing sit-down. If Classy can describe her, the film gets something it does not currently have from anyone.</span></button></li>
+<li data-q="q32"><button type="button" class="q"><span class="qt">What did you gain that you didn&rsquo;t expect?</span></button></li>
+<li data-q="q33"><button type="button" class="q"><span class="qt">What do the women of this church have now that they didn&rsquo;t have in the theater?</span></button></li>
+</ol></section>
+<section class="blk">
+<div class="blk-head"><span class="blk-no">6</span><div><h2>Mamaroneck, 2024 — and running out of room (12 min)</h2></div></div>
+<ol class="qs">
+<li class="key" data-q="q34"><button type="button" class="q"><span class="qt"><b>Take me to the first Sunday in this building.</b></span></button></li>
+<li data-q="q35"><button type="button" class="q"><span class="qt">What was it like walking in here before it was finished?</span></button></li>
+<li class="key" data-q="q36"><button type="button" class="q"><span class="qt"><b>How many were you when you opened? Where are you now?</b></span><span class="aside"><i>(Ask. Don&rsquo;t confirm.)</i></span></button></li>
+<li data-q="q37"><button type="button" class="q"><span class="qt">One service to five. When did you know you needed the fourth? The fifth?</span></button></li>
+<li class="key" data-q="q38"><button type="button" class="q"><span class="qt"><b>Nearly every service goes into overflow. What does that actually look like on a Sunday morning?</b></span></button></li>
+<li class="key" data-q="q39"><button type="button" class="q"><span class="qt"><b>You&rsquo;re out of room and looking for another location in Westchester. Say that out loud for me.</b></span><span class="aside"><i>the structural gift. </i></span></button></li>
+<li data-q="q40"><button type="button" class="q"><span class="qt">What changed for your people when the room was finally theirs?</span></button></li>
+<li data-q="q41"><button type="button" class="q"><span class="qt">Why does a building matter? Some people would say it&rsquo;s just a building.</span></button></li>
+</ol></section>
+<section class="blk">
+<div class="blk-head"><span class="blk-no">7</span><div><h2>Closing (6 min)</h2></div></div>
+<ol class="qs">
+<li class="key" data-q="q42"><button type="button" class="q"><span class="qt"><b>Each of you, separately: if Pastor John and Leslie were sitting right here, what would you say to them?</b></span><span class="aside">separately. Not a two-shot. This is the line most likely to need a single-name lower third.</span></button></li>
+<li data-q="q43"><button type="button" class="q"><span class="qt">What&rsquo;s one thing about The Life Church that has <i>not</i> changed since you joined it?</span></button></li>
+<li data-q="q44"><button type="button" class="q"><span class="qt">What does The Life Church look like from Westchester that it can&rsquo;t look like from Memphis?</span></button></li>
+<li class="key" data-q="q45"><button type="button" class="q"><span class="qt"><b>What haven&rsquo;t I asked that you want on the record?</b> — ask both, one at a time.</span></button></li>
+</ol></section>
+</div>
+
+<div class="bar"><div class="wrap">
+<span class="ask"><b id="na">0</b>asked</span>
+<span class="rem"><b id="nr">45</b>left of 45</span>
+<button type="button" id="reset">Reset</button>
+</div></div>
+
+<script>
+(function(){
+  var KEY = "qcard-wayne-and-classy-francis---interview-plan";
+  var items = Array.prototype.slice.call(document.querySelectorAll('.qs li'));
+  var store = {};
+  try { store = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch(e) { store = {}; }
+
+  function paint(){
+    var n = 0;
+    items.forEach(function(li){
+      if (store[li.dataset.q]) { li.classList.add('done'); n++; }
+      else li.classList.remove('done');
+      var b = li.querySelector('button.q');
+      if (b) b.setAttribute('aria-pressed', store[li.dataset.q] ? 'true' : 'false');
+    });
+    document.getElementById('na').textContent = n;
+    document.getElementById('nr').textContent = items.length - n;
+  }
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(store)); } catch(e) {} }
+
+  items.forEach(function(li){
+    li.querySelector('button.q').addEventListener('click', function(){
+      if (store[li.dataset.q]) delete store[li.dataset.q]; else store[li.dataset.q] = 1;
+      save(); paint();
+    });
+  });
+  document.getElementById('reset').addEventListener('click', function(){
+    if (!confirm('Clear every mark?')) return;
+    store = {}; save(); paint();
+  });
+  paint();
+})();
+</script>
+</body></html>
